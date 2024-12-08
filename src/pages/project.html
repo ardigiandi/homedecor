@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    #menu {
+      display: none;
+      opacity: 0;
+      margin-top: 25px;
+      padding: 40px;
+      background-color: gray;
+    }
+
+    #menu.open {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+    }
+
+    @media (min-width: 1024px) {
+      #menu {
+        display: flex !important;
+        opacity: 1;
+        background-color: #959595;
+      }
+    }
+  </style>
+  <body>
+    <!-- Start: Navbar -->
+    <nav
+      class="flex py-3 justify-between bg-[#959595] px-3 lg:px-10 items-center border-b border-white"
+    >
+      <img src="/dist/img/Logo.svg" alt="Logo" />
+
+      <!-- Menu Icon for Mobile -->
+      <img
+        src="/dist/img/menu.svg"
+        alt="Menu"
+        id="menu-btn"
+        class="block lg:hidden cursor-pointer"
+      />
+
+      <!-- Navigation Links -->
+      <ul
+        id="menu"
+        class="lg:flex gap-10 items-center hidden absolute top-16 left-0 w-full bg-[#959595] lg:static lg:w-auto lg:bg-transparent lg:flex-row lg:visible lg:opacity-100 transition-all duration-300"
+      >
+        <li>
+          <a href="/index.html" class="text-white text-base font-semibold"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/about.html"
+            class="text-white text-base font-semibold"
+            >ABOUT US</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/services.html"
+            class="text-white text-base font-semibold"
+            >SERVICES</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/project.html"
+            class="text-white text-base font-semibold"
+            >PROJECT</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/portofolio.html"
+            class="text-white text-base font-semibold"
+            >PORTOFOLIO</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- End: Navbar -->
+
+    <!-- Start: Main Hero -->
+    <section class="bg-[#959595] lg:px-12 px-6">
+      <div class="flex flex-col gap-4 lg:w-[655px] w-full pt-[115px] pb-24">
+        <h1 class="lg:text-[50px] text-4xl text-white font-bold">PROJECT</h1>
+        <p class="text-base text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+    </section>
+    <!-- End: Main Hero -->
+
+    <!-- Start: Hero 2 -->
+    <section
+      class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between mt-24 items-center"
+    >
+      <div
+        class="flex flex-col lg:w-[520px] w-full gap-4 items-start px-6 lg:px-0"
+      >
+        <span class="text-base font-bold text-[#757575]">Perfect Partner</span>
+        <h1 class="lg:text-[40px] text-3xl font-bold leading-tight">
+          WE HAVE PRIORITY FOR CAN CREATE DREAM HOME DESIGN
+        </h1>
+        <p class="text-base text-[#757575]">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo.
+        </p>
+        <a
+          href="#"
+          class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+          >PORTOFOLIO</a
+        >
+      </div>
+      <img
+        src="/dist/img/main2.png"
+        alt=""
+        class="w-[500px] h-[570px] hidden lg:block"
+      />
+    </section>
+    <!-- End: Hero 2 -->
+
+    <!-- Card -->
+    <div class="flex flex-wrap justify-center gap-7 lg:mt-20 mt-14">
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center border border-[#DADADA] hover:bg-black hover:text-white transition duration-300 ease-in-out group"
+      >
+        <div class="overflow-hidden">
+          <img
+            src="/dist/img/card.png"
+            alt=""
+            class="w-[360px] h-[380px] group-hover:scale-105 transition duration-500 ease-in-out"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-8 p-5 w-[230px] text-center justify-center"
+        >
+          <h1 class="text-base font-bold">PRE MADE HOME CONSULTATION</h1>
+          <ul class="flex flex-col gap-3 items-center">
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="/dist/img/v.svg" alt="" />
+              <p>Office Meeting</p>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="bg-[#757575] py-4 px-10 text-white font-semibold text-base"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Card -->
+
+    <!-- Start: Sponsor -->
+    <section
+      class="max-w-6xl mx-auto flex flex-wrap mt-24 justify-center gap-8"
+    >
+      <img src="/dist/img/logo1.svg" alt="" />
+      <img src="/dist/img/logo2.svg" alt="" />
+      <img src="/dist/img/logo3.svg" alt="" />
+      <img src="/dist/img/logo4.svg" alt="" />
+    </section>
+    <!-- End: Sponsor -->
+
+    <!-- Start: Contact -->
+    <section
+      class="max-w-6xl mx-auto mt-24 bg-[#757575] lg:px-24 px-8 py-12 lg:py-20 lg:rounded-md"
+    >
+      <div class="flex flex-col gap-3 items-start">
+        <h1 class="lg:text-[50px] text-3xl text-white font-bold leading-tight">
+          LETS CHANGE YOUR OWN HOME INTERIOR DESIGN NOW
+        </h1>
+        <a
+          href="#"
+          class="bg-black text-white text-base font-semibold px-9 py-4 rounded-md"
+          >CONTACT US</a
+        >
+      </div>
+    </section>
+    <!-- End: Contact -->
+
+    <!-- Start: Footer -->
+    <footer class="bg-black py-6 lg:px-12 px-8 mt-24">
+      <div
+        class="flex flex-wrap gap-7 justify-between border-b border-[#757575] py-14"
+      >
+        <div class="flex flex-col gap-9 w-[380px]">
+          <h1 class="text-[25px] text-white font-bold">INFORMATION</h1>
+          <p class="text-sm text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="flex gap-4">
+            <img src="/dist/img/fb.svg" alt="" />
+            <img src="/dist/img/x.svg" alt="" />
+            <img src="/dist/img/ig.svg" alt="" />
+            <img src="/dist/img/in.svg" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h1 class="text-[25px] text-white font-bold">NAVIGATION</h1>
+          <ul class="flex flex-col gap-3">
+            <li class="text-sm text-white">Homepage</li>
+            <li class="text-sm text-white">About Us</li>
+            <li class="text-sm text-white">Services</li>
+            <li class="text-sm text-white">Project</li>
+          </ul>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-[25px] text-white font-bold">CONTACT US</h1>
+          <ul class="mt-8 flex flex-col gap-4">
+            <li class="flex items-center gap-4">
+              <img src="/dist/img/location.svg" alt="" class="w-[20px]" />
+              <p class="text-sm text-white">Lumbung Hidup East Java</p>
+            </li>
+            <li class="flex items-center gap-4">
+              <img src="/dist/img/email.svg" alt="" class="w-[20px]" />
+              <p class="text-sm text-white">Hello@Homco.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between mt-5 gap-6 lg:gap-0">
+        <h1 class="text-sm text-white font-bold">
+          ALLRIGHTS RESERVED - HOMCO INTERIOR
+        </h1>
+        <div class="flex flex-wrap lg:gap-16 gap-5">
+          <h1 class="text-sm text-white font-semibold">DISCLAIMER</h1>
+          <h1 class="text-sm text-white font-semibold">PRIVICY POLICY</h1>
+          <h1 class="text-sm text-white font-semibold">TERM OF USE</h1>
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="/dist/script/main.js"></script>
+  </body>
+</html>

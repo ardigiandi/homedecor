@@ -918,6 +918,22 @@ select {
   width: 100%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1201,6 +1217,11 @@ select {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1421,6 +1442,10 @@ select {
     width: auto;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1512,6 +1537,10 @@ select {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-\[25px\] {
+    font-size: 25px;
   }
 
   .lg\:opacity-100 {

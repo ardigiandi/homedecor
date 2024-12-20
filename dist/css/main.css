@@ -854,16 +854,8 @@ select {
   height: 85px;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-6 {
   width: 1.5rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-\[174px\] {
@@ -1423,14 +1415,6 @@ select {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-40 {
-    width: 10rem;
   }
 
   .lg\:flex-row {
